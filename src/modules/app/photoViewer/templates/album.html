@@ -1,0 +1,13 @@
+<pre>{{ 'HELLO' | translate:name }} </pre>
+
+<div class="content">
+    <div infinite-scroll='ctrl.loadMore()' infinite-scroll-distance='0' class="scroll container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 block-images" ng-repeat='image in ctrl.images track by $index'>
+                <a ui-sref="photo({ id: image.id })">
+                    <img class="img-responsive" ng-src='{{image.url}}'>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
